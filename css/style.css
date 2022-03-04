@@ -6,6 +6,35 @@ body{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
+/* start nav style */
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.navigation ul{
+    display: flex;
+}
+.menu-icon{
+    display: none;
+}
+.navigation ul li{
+    list-style: none;
+    margin-right: 50px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.login-btn button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+}
 
 /* start banner style */
 header{
@@ -178,6 +207,15 @@ Responsive for mobile by midea query
 ----------------------------- */
 
 @media only screen and (max-width:688px) {
+    .menu-icon{
+        display: block;
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+    .menu-icon:hover nav ul
+    {
+        display: block;
+    }
     .banner-container{
         flex-direction: column;
     }
@@ -207,10 +245,21 @@ Responsive for mobile by midea query
     .football-container{
         width: 70%;
     }
+    .navigation ul{
+        display: none;
+    }
 }
 
 /* for tab  */
 @media only screen and (min-width:689px) and (max-width:991px) {
+    .navigation ul{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 28px;
+        color: #FFFFFF;
+    }
     .banner-container{
         padding: 20px;
     }
@@ -237,4 +286,5 @@ Responsive for mobile by midea query
     .trophie{
         height: 500px;
     }
+    
 }
