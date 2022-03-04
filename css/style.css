@@ -1,0 +1,112 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Poppins:wght@500&display=swap');
+
+/* common style */
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* start banner style */
+header{
+    background-color: #2827CC;
+}
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-info h1{
+    color: #FFFFFF;
+    font-size: 64px;
+}
+.watch-btn{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+}
+.banner-img img{
+    width: 556px;
+    height: 438px;
+}
+.banner-img{
+    transition: transform 5s ease-in-out;
+}
+.banner-img:hover{
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* end header style */
+/* start main section style */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1200px;
+    margin-bottom: 100px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px 10px;
+
+}
+.player{
+    width: 330px;
+    height: 474px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 15px;
+    box-shadow: 0px 0px 80px rgba(14, 13, 13, 0.15);
+}
+.player-thumnail img{
+    width: 100%;
+}
+.player-title{
+    font-weight: 700;
+    font-size: 28px;
+}
+.player-details p{
+    font-size: 12px;
+    color: #6C6C6C;
+}
+/* end plyer style */
+
+/* start practice style */
+.practices{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 100px;
+}
+.practice{
+    width: 250px;
+    height: 500px;
+}
+
+.practice, .practice-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.practice-thumnail img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+}
+.practice-thumnail img:hover{
+transform: scale(1.1);
+overflow: hidden;
+}
+.practice-details p{
+    font-size: 12px;
+    color: #6C6C6C;
+}
