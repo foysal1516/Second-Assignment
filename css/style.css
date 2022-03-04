@@ -110,3 +110,65 @@ overflow: hidden;
     font-size: 12px;
     color: #6C6C6C;
 }
+/* end practice style */
+/* start trophie styel */
+.trophie-heading{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 0;
+}
+.trophies{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.trophie{
+    width: 300px;
+    height: 400px;
+}
+.trophie-img img{
+    width: 100%;
+}
+.trophie,.trophie-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trophie-details p{
+    font-size: 12px;
+    color: #6C6C6C;
+}
+/* end main style */
+/* start footer style */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.football-container{
+    width: 483px;
+    height: 213px;
+}
+.football-container img{
+    width: 100%;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color: lightgray;
+}
+.fa-brands{
+    background-color: rgba(238, 231, 231, 0.692);
+    margin-right: 20px;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+}
+/* footer style end */
