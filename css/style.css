@@ -42,7 +42,7 @@ header{
 }
 .banner-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .banner-info h1{
@@ -221,7 +221,7 @@ Responsive for mobile by midea query
         flex-direction: column;
     }
     .banner-info h1{
-        font-size: 40px;
+        font-size: 20px;
     }
     .banner-img{
         margin-top: 30px;
