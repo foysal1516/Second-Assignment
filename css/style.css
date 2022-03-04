@@ -256,10 +256,13 @@ footer{
         /* display: none; */
         white-space: nowrap;
     }
+    .navigation ul li {
+        margin-right: 15px;
+    }
     .menu-icon{
-        display: block;
-        font-size: 28px;
-        color: #FFFFFF;
+        display: none;
+        /* font-size: 28px;
+        color: #FFFFFF; */
     }
     .login-btn button{
         white-space: nowrap;
