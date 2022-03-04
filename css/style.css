@@ -172,3 +172,69 @@ footer{
     margin-top: 20px;
 }
 /* footer style end */
+
+/* --------------------
+Responsive for mobile by midea query
+----------------------------- */
+
+@media only screen and (max-width:688px) {
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-info h1{
+        font-size: 40px;
+    }
+    .banner-img{
+        margin-top: 30px;
+    }
+    .banner-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-bottom: 100px;
+    }
+    .practices{
+        grid-template-columns: 0;
+        justify-items: center;
+    }
+    .trophies{
+        grid-template-columns: 0;
+        justify-items: center;
+    }
+    .football-container{
+        width: 70%;
+    }
+}
+
+/* for tab  */
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .banner-container{
+        padding: 20px;
+    }
+    .banner-info h1{
+        font-size: 30px;
+    }
+    .banner-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .container{
+        width: 80%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+    }
+    .practices{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .trophies{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .trophie{
+        height: 500px;
+    }
+}
