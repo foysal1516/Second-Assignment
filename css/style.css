@@ -76,12 +76,13 @@ main{
     align-items: center;
 }
 .container{
-    width: 1200px;
+    width: 100%;
     margin-bottom: 100px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     grid-gap: 27px 10px;
 
 }
@@ -112,7 +113,7 @@ main{
 .practices{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
+    justify-items: center;
     grid-gap: 100px;
 }
 .practice{
@@ -235,7 +236,7 @@ Responsive for mobile by midea query
         margin-bottom: 100px;
     }
     .practices{
-        grid-template-columns: 0;
+        grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
     .trophies{
