@@ -83,7 +83,7 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    grid-gap: 27px 10px;
+    grid-gap: 27px 0px;
 
 }
 .player{
@@ -203,19 +203,15 @@ footer{
 }
 /* footer style end */
 
-/* --------------------
-Responsive for mobile by midea query
------------------------------ */
+/* ----------------------------------------
+            Responsive for mobile by midea query
+                        ----------------------------- */
 
 @media only screen and (max-width:688px) {
     .menu-icon{
         display: block;
         font-size: 28px;
         color: #FFFFFF;
-    }
-    .menu-icon:hover nav ul
-    {
-        display: block;
     }
     .banner-container{
         flex-direction: column;
@@ -234,6 +230,9 @@ Responsive for mobile by midea query
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         margin-bottom: 100px;
+    }
+    .player{
+        margin: 20px;
     }
     .practices{
         grid-template-columns: repeat(1, 1fr);
@@ -254,12 +253,16 @@ Responsive for mobile by midea query
 /* for tab  */
 @media only screen and (min-width:689px) and (max-width:991px) {
     .navigation ul{
-        display: none;
+        /* display: none; */
+        white-space: nowrap;
     }
     .menu-icon{
         display: block;
         font-size: 28px;
         color: #FFFFFF;
+    }
+    .login-btn button{
+        white-space: nowrap;
     }
     .banner-container{
         padding: 20px;
