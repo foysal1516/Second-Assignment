@@ -26,9 +26,26 @@
     --white-color: #FFFFFF;
 }
 
+.gray-color {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 28px;
+}
+
+.btn-primary {
+    background: rgba(230, 83, 60, 1);
+    padding: 1rem 3rem;
+    border-radius: 42px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    border: none;
+}
+
 /* header related styles */
 header {
     background-color: rgba(17, 17, 17, 1.00);
+    margin-bottom: 100px;
 }
 
 nav {
@@ -89,4 +106,64 @@ nav {
     font-size: 4.87rem;
     color: var(--white-color);
     font-weight: bolder;
+    margin-bottom: 28px;
+}
+
+.btn-app {
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 1rem 3.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 42px;
+    color: rgba(255, 255, 255, 1);
+    background-color: inherit;
+    margin-left: 16px;
+}
+
+.video-tutorial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 206px;
+    height: 96px;
+    background-color: rgba(48, 48, 48, 0.54);
+    border-radius: 12px;
+    position: relative;
+    left: -100px;
+    top: -200px;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.tutorial-amount {
+    font-size: 1.5rem;
+    color: rgba(250, 250, 249, 1);
+    font-weight: 900;
+}
+
+.tutorial-title,
+.workout-title {
+    color: rgba(239, 237, 232, 0.65);
+}
+
+.workout-videos {
+    width: 160px;
+    height: 70px;
+    background-color: rgba(48, 48, 48, 0.54);
+    border-radius: 12px;
+    padding: 17px 24px;
+    position: absolute;
+    top: 250px;
+    right: 100px;
+}
+
+.workout-amounts {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
 }
