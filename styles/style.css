@@ -18,6 +18,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 /* sheared styles */
@@ -376,6 +377,11 @@ select {
         padding: 10px;
     }
 
+    .habbit {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .habbit-cart-container {
         grid-template-columns: 1fr;
     }
@@ -385,9 +391,20 @@ select {
         flex-direction: column;
         padding: 20px;
         gap: 30px;
+        margin: 0;
     }
 
     .run-column {
+        width: 100%;
+    }
+
+    /* calculator section*/
+    .calculator-container {
+        flex-direction: column;
+    }
+
+    .calculator-chart,
+    .calculator-bmi {
         width: 100%;
     }
 }
