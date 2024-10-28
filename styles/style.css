@@ -34,7 +34,7 @@
 
 .btn-primary {
     background: rgba(230, 83, 60, 1);
-    padding: 1rem 3rem;
+    padding: 16px 42px;
     border-radius: 42px;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 1);
@@ -44,8 +44,7 @@
 
 /* header related styles */
 header {
-    background-color: rgba(17, 17, 17, 1.00);
-    margin-bottom: 100px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(31, 30, 30));
 }
 
 nav {
@@ -53,6 +52,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 190px;
+}
+
+.menu-icon {
+    display: none;
 }
 
 .brand {
@@ -103,7 +106,7 @@ nav {
 }
 
 .banner-title {
-    font-size: 4.87rem;
+    font-size: 4rem;
     color: var(--white-color);
     font-weight: bolder;
     margin-bottom: 28px;
@@ -166,4 +169,107 @@ nav {
     font-size: 40px;
     font-weight: 900;
     color: rgba(255, 255, 255, 1);
+}
+
+/* main part start */
+main {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 100px 190px;
+}
+
+/* habbit section related styles */
+.habbit-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+}
+
+.habbit-info {
+    text-align: center;
+}
+
+.habbit-description,
+.habbit-cart-descrition {
+    font-size: 0.8rem;
+}
+
+.habbit-cart-container {
+    text-align: center;
+}
+
+.habbit-cart-img {
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 100px;
+}
+
+.habbit-cart-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.habbit-cart-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+
+/* responsive for mobile device */
+@media screen and (max-width:576px) {
+    .banner {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    nav {
+        /* justify-content: space-around; */
+        margin: 0 20px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+
+    .menu-icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-info {
+        width: 100%;
+    }
+
+    .btn-app {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .video-tutorial {
+        left: 2px;
+    }
+
+    .workout-videos {
+        top: 700px;
+        left: 168px;
+    }
+
+    /* habbit section style */
+    main {
+        padding: 10px;
+    }
+
+    .habbit-cart-container {
+        grid-template-columns: 1fr;
+    }
 }
