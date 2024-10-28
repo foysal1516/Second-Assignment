@@ -179,6 +179,7 @@ main {
 
 /* habbit section related styles */
 .habbit {
+    padding: 100px;
     padding-left: 190px;
     padding-right: 190px;
 }
