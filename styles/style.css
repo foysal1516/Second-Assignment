@@ -174,27 +174,40 @@ nav {
 /* main part start */
 main {
     background-color: rgba(0, 0, 0, 1);
-    padding: 100px 190px;
 }
 
 /* habbit section related styles */
-.habbit-title {
+.habbit {
+    margin-top: 100px;
+    padding-left: 190px;
+    padding-right: 190px;
+}
+
+.habbit-title,
+.run-title,
+.calculator-title {
     font-size: 3rem;
     font-weight: 900;
     color: rgba(255, 255, 255, 1);
 }
 
 .habbit-info {
+    max-width: 576px;
+    margin: 0 auto;
     text-align: center;
 }
 
 .habbit-description,
-.habbit-cart-descrition {
+.habbit-cart-descrition,
+.run-description,
+.calculator-description,
+.bmi-description {
     font-size: 0.8rem;
 }
 
 .habbit-cart-container {
     text-align: center;
+    margin-top: 58px;
 }
 
 .habbit-cart-img {
@@ -212,6 +225,100 @@ main {
 .habbit-cart-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* run related styles */
+.run-container {
+    margin-left: 190px;
+    margin-right: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 1);
+    background-position: center;
+    padding: 40px 54px;
+    border-radius: 18px;
+    margin-top: 100px;
+}
+
+.run-column {
+    width: 50%;
+}
+
+.run-img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* calculator realte styles */
+.calculator-info {
+    max-width: 671px;
+    text-align: center;
+    margin: 88px auto;
+}
+
+.chart-title,
+.bmi-title {
+    font-size: 1.75rem;
+    color: var(--white-color);
+}
+
+.chart-title {
+    margin-bottom: 42px;
+}
+
+.calculator-container {
+    background-color: rgba(34, 34, 34, 1);
+    padding: 52px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+table,
+th,
+td,
+tr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+
+.table-head th {
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 20px;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    padding: 15px 20px;
+}
+
+.bmi-title {
+    margin-bottom: 14px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 34px 0;
+}
+
+#activity-factor {
+    grid-column: span 2;
+}
+
+input,
+select {
+    padding: 13px 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
 }
 
 
@@ -271,5 +378,16 @@ main {
 
     .habbit-cart-container {
         grid-template-columns: 1fr;
+    }
+
+    /* run section */
+    .run-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .run-column {
+        width: 100%;
     }
 }
