@@ -315,6 +315,10 @@ td {
     margin: 34px 0;
 }
 
+select option {
+    color: black;
+}
+
 #activity-factor {
     grid-column: span 2;
 }
@@ -427,6 +431,13 @@ input::placeholder {
         gap: 5px;
 
     }
+
+    input,
+    select {
+        overflow: hidden;
+    }
+
+
 
 
 
