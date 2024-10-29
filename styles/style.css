@@ -187,7 +187,8 @@ main {
 
 .habbit-title,
 .run-title,
-.calculator-title {
+.calculator-title,
+.team-title {
     font-size: 3rem;
     font-weight: 900;
     color: rgba(255, 255, 255, 1);
@@ -280,8 +281,11 @@ main {
 th,
 td {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-collapse: collapse;
     padding: 15px 20px;
+}
+
+table {
+    border-collapse: collapse;
 }
 
 .table-head th {
@@ -335,6 +339,8 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
+
+
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
     nav {
@@ -355,12 +361,13 @@ input::placeholder {
         margin: 0 20px;
     }
 
-    .btn-app {
-        margin-left: 0;
-    }
-
     .video-tutorial {
         left: -30px;
+    }
+
+    .btn-app,
+    .btn-primary {
+        padding: 10px 20px;
     }
 
     /* habbit related styles */
@@ -387,5 +394,21 @@ input::placeholder {
     /* calculator related styles */
     .calculator-container {
         flex-direction: column;
+        padding: 20px 50px;
+
+    }
+
+    .form-container {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    input,
+    select {
+        padding: 9px 8px;
+    }
+
+    select option {
+        width: 100%;
     }
 }
