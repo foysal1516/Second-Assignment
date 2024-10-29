@@ -302,9 +302,7 @@ td {
     margin-bottom: 14px;
 }
 
-.calculator-bmi {
-    max-width: 577px;
-}
+
 
 
 .form-container {
@@ -389,11 +387,5 @@ input::placeholder {
     /* calculator related styles */
     .calculator-container {
         flex-direction: column;
-        padding: 20px;
-    }
-
-    .calculator-bmi {
-        margin-top: 30px;
-        width: 100%;
     }
 }
