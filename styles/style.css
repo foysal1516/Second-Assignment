@@ -302,9 +302,15 @@ td {
     margin-bottom: 14px;
 }
 
-form {
+.calculator-bmi {
+    max-width: 577px;
+}
+
+
+.form-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     gap: 12px;
     margin: 34px 0;
 }
@@ -406,21 +412,23 @@ input::placeholder {
     }
 
     /* calculator section*/
+    /* .calculator {
+        padding: 10px;
+    } */
+
     .calculator-container {
         flex-direction: column;
-        padding: 0;
+        padding: 10px;
     }
 
-    form,
-    input,
-    select {
+    .form-container {
         width: 100%;
         /* padding: 10px; */
         gap: 5px;
 
     }
 
-    /* .calculator-bmi {} */
+
 
 
 
