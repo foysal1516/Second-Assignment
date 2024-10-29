@@ -277,12 +277,11 @@ main {
 
 }
 
-table,
 th,
-td,
-tr {
+td {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-collapse: collapse;
+    padding: 15px 20px;
 }
 
 .table-head th {
@@ -297,6 +296,7 @@ td {
     font-size: 0.8rem;
     padding: 15px 20px;
 }
+
 
 .bmi-title {
     margin-bottom: 14px;
@@ -320,6 +320,11 @@ select {
     background-color: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.6);
     border: none;
+}
+
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -406,12 +411,17 @@ select {
         padding: 0;
     }
 
-    form {
+    form,
+    input,
+    select {
         width: 100%;
         /* padding: 10px; */
         gap: 5px;
 
     }
 
-    .calculator-bmi {}
+    /* .calculator-bmi {} */
+
+
+
 }
