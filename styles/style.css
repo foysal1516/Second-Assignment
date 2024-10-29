@@ -270,9 +270,9 @@ main {
 
 .calculator-container {
     background-color: rgba(34, 34, 34, 1);
-    padding: 52px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 52px 190px;
     align-items: center;
 
 }
@@ -403,12 +403,15 @@ select {
     /* calculator section*/
     .calculator-container {
         flex-direction: column;
+        padding: 0;
     }
 
-    form,
-    .calculator-bmi {
+    form {
         width: 100%;
         /* padding: 10px; */
         gap: 5px;
+
     }
+
+    .calculator-bmi {}
 }
