@@ -57,6 +57,9 @@ nav {
 
 .menu-icon {
     display: none;
+    width: 24px;
+    height: 24px;
+    background-color: var(--white-color);
 }
 
 .brand {
@@ -133,7 +136,7 @@ nav {
     background-color: rgba(48, 48, 48, 0.54);
     border-radius: 12px;
     position: relative;
-    left: -100px;
+    left: -59px;
     top: -200px;
 }
 
@@ -161,9 +164,9 @@ nav {
     background-color: rgba(48, 48, 48, 0.54);
     border-radius: 12px;
     padding: 17px 24px;
-    position: absolute;
-    top: 250px;
-    right: 100px;
+    top: -497px;
+    right: -138px;
+    position: relative;
 }
 
 .workout-amounts {
@@ -179,9 +182,7 @@ main {
 
 /* habbit section related styles */
 .habbit {
-    padding: 100px;
-    padding-left: 190px;
-    padding-right: 190px;
+    padding: 100px 190px 0 190px;
 }
 
 .habbit-title,
@@ -236,7 +237,6 @@ main {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(34, 34, 34, 1);
-    background-position: center;
     padding: 40px 54px;
     border-radius: 18px;
     margin-top: 100px;
@@ -337,20 +337,9 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-
-
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
-    .banner {
-        flex-direction: column;
-        margin: 0px;
-        padding: 20px;
-    }
-
     nav {
-        /* justify-content: space-around; */
         margin: 0 20px;
     }
 
@@ -358,89 +347,53 @@ input::placeholder {
         display: none;
     }
 
-
     .menu-icon {
         display: block;
-        width: 24px;
-        height: 24px;
-        background-color: rgba(255, 255, 255, 1);
     }
 
-    .banner-img {
-        width: 100%;
-    }
-
-    .banner-info {
-        width: 100%;
+    /* banner related styles */
+    .banner {
+        flex-direction: column;
+        margin: 0 20px;
     }
 
     .btn-app {
         margin-left: 0;
-        margin-top: 10px;
     }
 
     .video-tutorial {
-        left: 2px;
+        left: -30px;
     }
 
-    .workout-videos {
-        top: 728px;
-        left: 150px;
-    }
-
-    /* habbit section style */
-    main {
-        /* padding: 10px; */
-    }
-
+    /* habbit related styles */
     .habbit {
-        padding-top: 100px;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 20px;
     }
 
     .habbit-cart-container {
         grid-template-columns: 1fr;
     }
 
-    /* run section */
+    /* run related styles */
     .run-container {
         flex-direction: column;
+        margin: 0 20px;
         padding: 20px;
-        gap: 30px;
-        margin: 0;
     }
 
     .run-column {
         width: 100%;
+        margin-bottom: 20px;
     }
 
-    /* calculator section*/
-    /* .calculator {
-        padding: 10px;
-    } */
-
+    /* calculator related styles */
     .calculator-container {
         flex-direction: column;
-        padding: 10px;
+        padding: 20px;
     }
 
-    .form-container {
+    .calculator-bmi {
+        margin-top: 30px;
         width: 100%;
-        /* padding: 10px; */
-        gap: 5px;
-
     }
-
-    input,
-    select {
-        overflow: hidden;
-    }
-
-
-
-
-
-
-
 }
