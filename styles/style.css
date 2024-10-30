@@ -344,7 +344,7 @@ input::placeholder {
 
 /* team related styles */
 .team {
-    padding: 0 190px;
+    padding: 0 190px 88px 190px;
 }
 
 .team-info {
@@ -385,6 +385,55 @@ input::placeholder {
     font-size: 0.5rem;
 }
 
+/* footer realted styles */
+footer {
+    background-color: rgba(34, 34, 34, 1);
+    padding: 66px 190px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.fitness-title {
+    font-size: 4.37rem;
+    font-weight: 800;
+    color: rgba(230, 83, 60, 1);
+}
+
+.fitness-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+
+.get-started-title {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.get-started span {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 2rem;
+
+}
+
+hr {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 79px 0 36px 0;
+}
+
+.footer-description {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
 
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
@@ -407,7 +456,7 @@ input::placeholder {
     }
 
     .video-tutorial {
-        left: -30px;
+        left: -17px;
     }
 
     .btn-app,
@@ -445,6 +494,10 @@ input::placeholder {
 
     }
 
+    .calculator-bmi {
+        max-width: 310px;
+    }
+
     .calculator-bmi-info {
         width: 100%;
     }
@@ -465,6 +518,15 @@ input::placeholder {
     }
 
     .team-album {
+        grid-template-columns: 1fr;
+    }
+
+    /* footer related styles */
+    footer {
+        padding: 20px;
+    }
+
+    .footer-container {
         grid-template-columns: 1fr;
     }
 
