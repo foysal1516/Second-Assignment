@@ -424,7 +424,7 @@ input::placeholder {
     height: 2px;
     background: #f63c25;
     position: absolute;
-    left: 116px;
+    left: 133px;
     top: 95px;
 }
 
@@ -448,7 +448,7 @@ input::placeholder {
 
 .price-btn {
     background: rgba(230, 83, 60, 1);
-    padding: 11px 30px;
+    padding: 10px 25px;
     border-radius: 42px;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 1);
