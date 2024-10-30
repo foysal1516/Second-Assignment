@@ -28,9 +28,7 @@
 }
 
 .gray-color {
-    font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 28px;
 }
 
 .btn-primary {
@@ -114,6 +112,10 @@ nav {
     color: var(--white-color);
     font-weight: bolder;
     margin-bottom: 28px;
+}
+
+.btn-container {
+    margin-top: 20px;
 }
 
 .btn-app {
@@ -204,7 +206,8 @@ main {
 .habbit-cart-descrition,
 .run-description,
 .calculator-description,
-.bmi-description {
+.bmi-description,
+.team-description {
     font-size: 0.8rem;
 }
 
@@ -339,6 +342,48 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* team related styles */
+.team {
+    padding: 0 190px;
+}
+
+.team-info {
+    max-width: 671px;
+    text-align: center;
+    margin: auto;
+    padding: 58px 0;
+}
+
+.team-album {
+    background-color: rgba(34, 34, 34, 1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.trainer-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+.trainer-info {
+    position: relative;
+    top: -90px;
+    left: 30px;
+}
+
+.trainer-name {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.25rem;
+}
+
+.designation {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.5rem;
+}
 
 
 /* responsive for mobile device */
@@ -394,7 +439,9 @@ input::placeholder {
     /* calculator related styles */
     .calculator-container {
         flex-direction: column;
-        padding: 20px 50px;
+        justify-content: flex-start;
+        padding: 20px;
+
 
     }
 
@@ -410,6 +457,15 @@ input::placeholder {
     input,
     select {
         padding: 9px 8px;
+    }
+
+    /* team related styles */
+    .team {
+        padding: 20px;
+    }
+
+    .team-album {
+        grid-template-columns: 1fr;
     }
 
 }
