@@ -190,7 +190,8 @@ main {
 .habbit-title,
 .run-title,
 .calculator-title,
-.team-title {
+.team-title,
+.price-plan-title {
     font-size: 3rem;
     font-weight: 900;
     color: rgba(255, 255, 255, 1);
@@ -207,7 +208,8 @@ main {
 .run-description,
 .calculator-description,
 .bmi-description,
-.team-description {
+.team-description,
+.price-plan-description {
     font-size: 0.8rem;
 }
 
@@ -385,6 +387,76 @@ input::placeholder {
     font-size: 0.5rem;
 }
 
+/* price plan related style */
+.price-plan-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    padding: 0 190px;
+}
+
+.price-plan {
+    padding-bottom: 100px;
+}
+
+.price-plan-info {
+    text-align: center;
+}
+
+.plan-cart {
+    background-color: rgba(34, 34, 34, 1);
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cart-title {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.cart-title::before {
+    content: " ";
+    width: 50px;
+    height: 2px;
+    background: #f63c25;
+    position: absolute;
+    left: 116px;
+    top: 95px;
+}
+
+.cart-price {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.cart-price .price-digit {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.pricing-item {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+    line-height: 3rem;
+    list-style: none;
+}
+
+.price-btn {
+    background: rgba(230, 83, 60, 1);
+    padding: 11px 30px;
+    border-radius: 42px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    border: none;
+}
+
+
 /* footer realted styles */
 footer {
     background-color: rgba(34, 34, 34, 1);
@@ -434,6 +506,9 @@ hr {
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
+
+
+
 
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
@@ -528,6 +603,16 @@ hr {
 
     .footer-container {
         grid-template-columns: 1fr;
+    }
+
+    /* price plan related style */
+    .price-plan-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .cart-title::before {
+        left: 166px;
     }
 
 }
